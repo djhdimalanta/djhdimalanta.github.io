@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #2 - Income Tax Calculator</title>
+    <link rel="stylesheet" href="Tax.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a>Assignments</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Converter.html">Conversion Calculators</a></li>
+                    <li><a href="Tax.html">Income Tax Calculator</a></li>
+                    <li><a href="FSA.html">Factorial, Sum, Average</a></li>
+                    <li><a href="Payroll.html">Simple Payroll</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        Assignment #2 - Income Tax Calculator
+    </header>
+    <main>
+        <div class="container">
+            <label for="salary">Enter Your Annual Salary:</label>
+            <input type="number" id="salary" placeholder="Enter Salary">
+            <button onclick="calculateTax()">Calculate Tax</button>
+            <div id="result"></div>
+        </div>
+    </main>
+
+    <script src="Tax.js"></script>
+</body>
+</html>

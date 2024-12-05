@@ -1,0 +1,119 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #F5F0CD;
+  margin: 0;
+}
+
+header {
+  background-color: #B1F0F7;
+  font-size: 3em;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #81BFDA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+  background-color: #81BFDA;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+nav {
+  background-color: #81BFDA;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #575757;
+}
+
+.dropdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  display: none;
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #575757;
+}
+
+.menu .dropdown:hover .dropdown-menu {
+  display: block;
+}

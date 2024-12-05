@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converters</title>
+  <link rel="stylesheet" href="Converter.css">
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a>Assignments</a>
+        <ul class="dropdown-menu">
+          <li><a href="Converter.html">Conversion Calculators</a></li>
+          <li><a href="Tax.html">Income Tax Calculator</a></li>
+          <li><a href="FSA.html">Factorial, Sum, Average</a></li>
+          <li><a href="Payroll.html">Simple Payroll</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <header>Assignment #1 - Conversion Tool</header>
+  <main>
+    <section>
+      <h1>Temperature Converter</h1>
+      <label for="temperature">Enter Temperature:</label>
+      <input type="number" id="temperature" placeholder="Enter a temperature (°C / °F)">
+      <label for="tempconversion">Convert to:</label>
+      <select id="tempconversion">
+        <option value="celsius">Celsius (Fahrenheit to Celsius)</option>
+        <option value="fahrenheit">Fahrenheit (Celsius to Fahrenheit)</option>
+      </select>
+      <button id="convertTempBtn">Convert Temperature</button>
+      <div id="tempresult" class="result"></div>
+    </section>
+
+    <section>
+      <h1>Length Converter</h1>
+      <label for="length">Enter Length:</label>
+      <input type="number" id="length" placeholder="Enter a length (m / ft)">
+      <label for="lengthconversion">Convert to:</label>
+      <select id="lengthconversion">
+        <option value="meters">Meters (Feet to Meters)</option>
+        <option value="feet">Feet (Meters to Feet)</option>
+      </select>
+      <button id="convertLengthBtn">Convert Length</button>
+      <div id="lengthresult" class="result"></div>
+    </section>
+  </main>
+
+  <script src="Converter.js"></script>
+</body>
+</html>

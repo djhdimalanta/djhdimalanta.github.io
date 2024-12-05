@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Payroll</title>
+    <link rel="stylesheet" href="Payroll.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a>Assignments</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Converter.html">Conversion Calculators</a></li>
+                    <li><a href="Tax.html">Income Tax Calculator</a></li>
+                    <li><a href="FSA.html">Factorial, Sum, Average</a></li>
+                    <li><a href="Payroll.html">Simple Payroll</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <header>Assignment #4 - Simple Payroll</header>
+    
+    <main>
+        <section>
+            <h2>Simple Payroll</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee No.</th>
+                        <th>Employee Name</th>
+                        <th>Days Worked</th>
+                        <th>Daily Rate</th>
+                        <th>Gross Pay</th>
+                        <th>Deduction</th>
+                        <th>Net Pay</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td id="tGrossPay">0.00</td>
+                        <td id="tDeduction">0.00</td>
+                        <td id="tNetPay">0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+      <section>
+          <h3>Add Employee</h3>
+          <form id="addEmployeeForm">
+              <label for="empName">Employee Name:</label>
+              <input id="empName" type="text" placeholder="Enter employee name" required>
+              <label for="daysWorked">Days Worked:</label>
+              <input id="daysWorked" type="number" placeholder="Enter days worked" min="1" required>
+              <label for="dailyRate">Daily Rate:</label>
+              <input id="dailyRate" type="number" placeholder="Enter daily rate" min="0" step="0.01" required>
+              <label for="deduction">Deduction Amount:</label>
+              <input id="deduction" type="number" placeholder="Enter deduction amount" min="0" step="0.01" required>
+              <button type="submit">Add Employee</button>
+          </form>
+      </section>
+      <section>
+        <h3>Delete Employee</h3>
+        <label for="delemployee">Delete Employee Number</label>
+        <input id="delemployee" type="number" min="1">
+        <button id="btndelete">Delete</button>
+    </section>
+  
+      <dialog id="dlgConfirmCancel">
+          <h4 id="dlgmsg"></h4>
+          <div class="dialog-buttons">
+              <button id="btnConfirm" value="confirm">Confirm</button>
+              <button id="btnCancel" value="cancel">Cancel</button>
+          </div>
+      </dialog>
+  </main>
+    <script src="Payroll.js"></script>
+</body>
+</html>
