@@ -125,16 +125,3 @@ nav {
   display: block;
 }
 
-
-.dialog-buttons {
-  display: none;
-}
-
-dialog {
-  display: none;
-  border: none;
-  border-radius: 10px;
-  padding: 1em;
-  background-color: lightgrey;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
